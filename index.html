@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var word = ["PLANET","SUN","STAR","MOON","MARS","VENUS","MERCURY","EARTH","LITTLE DIPPER","BIG DIPPER","ARIES","TAURUS","ORION","LIBRA","CAPRICORN"]
+     var computerChoice = Math.floor(Math.random()*15);
+     var answer = word[computerChoice];
+     var myLength = answer.length;
+     var win = myLength;
+     var letters = answer.split('');
+     var lives= 5;
+     var output ="";
+     var userChoice="";
+
+     document.onkeyup = function (event) {
+         var keyPressed = event.key.toLowerCase();
+         console.log("This key was pressed: "+ keyPressed);
+     }
+
+     var answerArray=[];
+     for (var i = 0; i < word.length; i++);{
+         answerArray[i]= "_ ";
+     }
+     var otherLetters = word.length;
+    </script>
+    
+</body>
+</html>
