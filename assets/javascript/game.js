@@ -31,3 +31,5 @@ var lives= 5;
     }
 }
      }
+
+     //solved rps 7 to figure out how to link js to html
